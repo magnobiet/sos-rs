@@ -43,9 +43,10 @@ module.exports = {
     '@typescript-eslint/array-type': ['error', { default: 'generic' }],
     '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
     '@typescript-eslint/explicit-function-return-type': 'error',
-    '@typescript-eslint/consistent-return': 'error',
+    '@typescript-eslint/consistent-return': 'off',
     'unicorn/no-null': 'off',
     'import/no-default-export': 'off',
+    'array-callback-return': 'off',
   },
   overrides: [
     {
