@@ -15,6 +15,10 @@ const links = [
     name: 'Portal SOS Enchentes do Estado do Rio Grande do Sul',
     link: 'https://sosenchentes.rs.gov.br/',
   },
+  {
+    name: 'Perfil do aeroporto de Porto Alegre no Instagram',
+    link: 'https://www.instagram.com/portoalegreairportoficial/',
+  },
 ];
 
 export function SectionLinksUteis({
