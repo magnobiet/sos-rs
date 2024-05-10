@@ -28,6 +28,10 @@ const cidades = [
     link: 'https://www.instagram.com/prefeituraencantado',
   },
   {
+    name: 'Estrela',
+    link: 'https://www.instagram.com/governodeestrelars/',
+  },
+  {
     name: 'Guaíba',
     link: 'https://www.instagram.com/prefeituradeguaiba/',
   },
@@ -66,6 +70,10 @@ const cidades = [
   {
     name: 'Teutônia',
     link: 'https://www.instagram.com/prefeiturateutonia/',
+  },
+  {
+    name: 'Três Coroas',
+    link: 'https://www.instagram.com/prefeitura_trescoroas/',
   },
 ];
 
