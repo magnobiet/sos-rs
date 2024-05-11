@@ -5,8 +5,8 @@ import { SectionDefesaCivil } from '~/components/section-defesa-civil';
 import { SectionDoacoes } from '~/components/section-doacoes';
 import { SectionLinksUteis } from '~/components/section-links-uteis';
 import { SectionMapas } from '~/components/section-mapas';
+import { SectionMunicipios } from '~/components/section-municipios';
 import { SectionNoticias } from '~/components/section-noticias';
-import { SectionPrefeituras } from '~/components/section-prefeituras';
 
 export default function Home(): ReactElement {
   return (
@@ -23,7 +23,7 @@ export default function Home(): ReactElement {
 
       <SectionNoticias />
 
-      <SectionPrefeituras />
+      <SectionMunicipios />
 
       <SectionLinksUteis />
     </div>

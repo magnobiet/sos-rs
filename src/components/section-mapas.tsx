@@ -30,6 +30,16 @@ export function SectionMapas({
               src="https://www.google.com/maps/d/embed?mid=1ZlKA__gK8tH-WY6mbDeQzltsiwao7Q8&ehbc=2E312F"
             />
           </div>
+
+          <div className="w-full rounded bg-slate-50 shadow lg:w-2/4">
+            <h3 className="p-4 text-2xl">Áreas de risco pelas águas</h3>
+
+            <iframe
+              title="Áreas de risco pelas águas"
+              className="h-96 w-full"
+              src="https://coastal.climatecentral.org/embed/map/8/-51.3046/-30.063/?theme=water_level&map_type=water_level_above_mhhw&basemap=roadmap&contiguous=true&elevation_model=best_available&water_level=5.0&water_unit=m"
+            />
+          </div>
         </div>
 
         <div className="flex w-full flex-col gap-8 md:flex-row">
@@ -43,7 +53,7 @@ export function SectionMapas({
             </p>
 
             <Link
-              className="bg-rs-green rounded px-4 py-2 font-bold text-white"
+              className="rounded bg-rs-green px-4 py-2 font-bold text-white"
               href="https://www.snirh.gov.br/hidroweb-mobile/mapa"
               target="_blank"
             >
@@ -60,7 +70,7 @@ export function SectionMapas({
             </p>
 
             <Link
-              className="bg-rs-green rounded px-4 py-2 font-bold text-white"
+              className="rounded bg-rs-green px-4 py-2 font-bold text-white"
               href="https://www.flightradar24.com/-29.50,-52.78/7"
               target="_blank"
             >

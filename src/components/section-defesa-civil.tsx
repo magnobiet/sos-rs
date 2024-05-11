@@ -2,6 +2,7 @@ import Link from 'next/link';
 import type { ReactElement } from 'react';
 import type { AlertasResponse } from '~/app/api/defesa-civil/alertas/route';
 import { baseUrl } from '~/config';
+import { formatDate } from '~/lib/utils';
 import { PageSection } from './page-section';
 import {
   Carousel,
@@ -19,16 +20,6 @@ async function getData(): Promise<AlertasResponse> {
   }
 
   return response.json() as Promise<AlertasResponse>;
-}
-
-function formatDate(date: number | Date | undefined): string {
-  return new Intl.DateTimeFormat('pt-BR', {
-    dateStyle: 'short',
-    timeStyle: 'long',
-    timeZone: 'America/Sao_Paulo',
-  })
-    .format(date)
-    .replace(' BRT', '');
 }
 
 export async function SectionDefesaCivil({
@@ -106,7 +97,7 @@ export async function SectionDefesaCivil({
           </div>
         </div>
 
-        <section className=" bg-rs-yellow/20 mt-12 rounded p-4 shadow">
+        <section className="mt-12 rounded bg-rs-yellow/20 p-4 shadow">
           <Carousel className="w-full max-w-fit">
             <CarouselContent>
               {alertas.map(({ title, content, dateTime, link }) => {
@@ -123,7 +114,7 @@ export async function SectionDefesaCivil({
                         <p className="line-clamp-2">{content}</p>
 
                         <a
-                          className="bg-rs-red/75 rounded px-4 py-2 font-bold text-white"
+                          className="rounded bg-rs-red/75 px-4 py-2 font-bold text-white"
                           href={link}
                           target="_blank"
                           rel="noopener"
