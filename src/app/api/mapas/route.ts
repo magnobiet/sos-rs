@@ -19,7 +19,7 @@ const mapas: MunicipiosResponse = [
     name: 'Pontos de bloqueios em rodovias',
     description:
       'CRBM, DAER e PRF. Pontos de Bloqueios Totais e Parciais em rodovias Estaduais e Federais, atualizados em tempo real pelo Comando Rodoviário da Brigada Militar e Polícia Rodoviária Federal.',
-    link: 'https://www.google.com/maps/d/viewer?mid=1ZlKA__gK8tH-WY6mbDeQzltsiwao7Q8&hl=pt-BR&usp=sharing',
+    link: 'https://crbm.app.br/site/',
     iframeLink:
       'https://www.google.com/maps/d/embed?mid=1ZlKA__gK8tH-WY6mbDeQzltsiwao7Q8&ehbc=2E312F',
   },
@@ -29,6 +29,14 @@ const mapas: MunicipiosResponse = [
     link: null,
     iframeLink:
       'https://coastal.climatecentral.org/embed/map/8/-51.3046/-30.063/?theme=water_level&map_type=water_level_above_mhhw&basemap=roadmap&contiguous=true&elevation_model=best_available&water_level=5.0&water_unit=m',
+  },
+  {
+    name: 'Sistemas de Proteção e Fontes de Água - Porto Alegre e Região Metropolitana',
+    description:
+      'Este mapa tem o propósito de mapear as alternativas de água potável de acesso público (reservatórios e fontes públicas) fornecidos pelo DMAE e CORSAN, bem como identificar as fontes privadas de água potável na região de Porto Alegre e sua área metropolitana.',
+    link: null,
+    iframeLink:
+      'https://www.google.com/maps/d/embed?mid=1XCT-eGo39ygiVlLHE6EjxZHY45E2TqA&ehbc=2E312F',
   },
   {
     name: 'ANA - Hidroweb',
@@ -48,6 +56,13 @@ const mapas: MunicipiosResponse = [
     name: 'S2ID',
     description: 'Sistema Integrado de Informações sobre Desastres',
     link: 'https://s2id.mi.gov.br/paginas/index.xhtml',
+    iframeLink: null,
+  },
+  {
+    name: 'Mapa de Profundidades Máximas Prováveis para Cheia de 2024 em Porto Alegre',
+    description:
+      'Mapa de profundidades máximas prováveis que podem vir a ocorrer nos bairros afetados pelas cheias de 2024 em Porto Alegre.',
+    link: 'https://ee-leolaipelt.projects.earthengine.app/view/cheiasportoalegre2024',
     iframeLink: null,
   },
 ];
