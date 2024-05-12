@@ -13,7 +13,9 @@ import {
 } from './ui/carousel';
 
 async function getData(): Promise<AlertasResponse> {
-  const response = await fetch(`${baseUrl}/api/defesa-civil/alertas`);
+  const response = await fetch(`${baseUrl}/api/defesa-civil/alertas`, {
+    cache: 'no-cache',
+  });
 
   if (!response.ok) {
     throw new Error('Failed to fetch data');
@@ -27,7 +29,7 @@ export async function SectionDefesaCivil({
 }: {
   className?: string;
 }): Promise<ReactElement> {
-  const alertas = await getData();
+  const { data: alertas } = await getData();
 
   return (
     <PageSection
@@ -39,19 +41,16 @@ export async function SectionDefesaCivil({
           <div className="w-full md:w-2/4">
             <h3 className="text-bold text-center text-xl">SMS</h3>
 
-            <ol>
+            <ol className="list-disc">
               <li>
                 Envie um SMS para o número{' '}
                 <strong className="font-bold">40199</strong>
               </li>
 
-              <li>
-                Digite o CEP do seu endereço (Você pode cadastrar quantos CEPs
-                você quiser)
-              </li>
+              <li>Digite o CEP do seu endereço.</li>
             </ol>
 
-            <p className="text-xs">
+            <p className="mt-2 text-xs">
               Fonte:
               <Link
                 className="pl-1 hover:underline focus:underline"
@@ -79,12 +78,11 @@ export async function SectionDefesaCivil({
               </li>
 
               <li>
-                Após essa primeira interação,você poderá escolher o local de que
-                deseja receber os alertas.
+                Você poderá escolher o local de que deseja receber os alertas.
               </li>
             </ol>
 
-            <p className="text-xs">
+            <p className="mt-2 text-xs">
               Fonte:
               <Link
                 className="pl-1 hover:underline focus:underline"

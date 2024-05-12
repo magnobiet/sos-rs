@@ -15,7 +15,7 @@ const radios = [
 
 const jornais = [
   {
-    name: 'GZH',
+    name: 'Gaúcha ZH',
     link: 'https://gauchazh.clicrbs.com.br/',
   },
   {
@@ -27,12 +27,16 @@ const jornais = [
     link: 'https://gauchazh.clicrbs.com.br/pioneiro/ultimas-noticias/',
   },
   {
-    name: 'NH',
+    name: 'Jornal NH',
     link: 'https://digital.jornalnh.com.br/',
   },
   {
     name: 'Repercussão',
     link: 'https://www.jornalrepercussao.com.br/',
+  },
+  {
+    name: 'Serra Nossa',
+    link: 'https://serranossa.com.br/',
   },
 ];
 
