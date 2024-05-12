@@ -44,6 +44,12 @@ const mapas: MunicipiosResponse = [
     link: 'https://www.flightradar24.com/-29.50,-52.78/7',
     iframeLink: null,
   },
+  {
+    name: 'S2ID',
+    description: 'Sistema Integrado de Informações sobre Desastres',
+    link: 'https://s2id.mi.gov.br/paginas/index.xhtml',
+    iframeLink: null,
+  },
 ];
 
 export function GET(): Response {
