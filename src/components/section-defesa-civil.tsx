@@ -38,19 +38,19 @@ export async function SectionDefesaCivil({
     >
       <div className="w-full">
         <div className="flex flex-col gap-4 md:flex-row">
-          <div className="w-full md:w-2/4">
+          <div className="flex w-full flex-col gap-2 md:w-2/4">
             <h3 className="text-bold text-center text-xl">SMS</h3>
 
-            <ol className="list-disc">
+            <ol className="list-inside list-decimal">
               <li>
                 Envie um SMS para o número{' '}
                 <strong className="font-bold">40199</strong>
               </li>
 
-              <li>Digite o CEP do seu endereço.</li>
+              <li>Digite o CEP do seu endereço</li>
             </ol>
 
-            <p className="mt-2 text-xs">
+            <p className="text-xs">
               Fonte:
               <Link
                 className="pl-1 hover:underline focus:underline"
@@ -62,10 +62,10 @@ export async function SectionDefesaCivil({
             </p>
           </div>
 
-          <div className="mt-8 w-full md:mt-0 md:w-2/4">
+          <div className="flex w-full flex-col gap-2 md:w-2/4">
             <h3 className="text-bold text-center text-xl">WhatsApp</h3>
 
-            <ol>
+            <ol className="list-inside list-decimal">
               <li>
                 Envie uma mensagem para o número{' '}
                 <Link
@@ -78,7 +78,7 @@ export async function SectionDefesaCivil({
               </li>
 
               <li>
-                Você poderá escolher o local de que deseja receber os alertas.
+                Você poderá escolher o local de que deseja receber os alertas
               </li>
             </ol>
 
