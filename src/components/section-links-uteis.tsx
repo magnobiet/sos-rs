@@ -16,6 +16,14 @@ const links = [
     link: 'https://sosenchentes.rs.gov.br/',
   },
   {
+    name: 'Boletins sobre o impacto das chuvas no RS',
+    link: 'https://estado.rs.gov.br/boletins-sobre-o-impacto-das-chuvas-no-rs',
+  },
+  {
+    name: 'Dados Hidrológicos DRHS/SEMA',
+    link: 'https://linktr.ee/niveisguaiba2024',
+  },
+  {
     name: 'Perfil do aeroporto de Porto Alegre no Instagram',
     link: 'https://www.instagram.com/portoalegreairportoficial/',
   },
@@ -32,7 +40,7 @@ export function SectionLinksUteis({
         {links.map(({ name, link }) => {
           return (
             <li key={link}>
-              <Link className="underline" href={link}>
+              <Link className="underline" href={link} target="_blank">
                 {name}
               </Link>
             </li>
