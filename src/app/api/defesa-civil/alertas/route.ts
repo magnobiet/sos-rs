@@ -1,4 +1,5 @@
 import { parse } from 'node-html-parser';
+import type { GenericResponse } from '../../generic-response';
 
 type AlertasDefesaCivilResponse = {
   recordcount: number;
@@ -18,7 +19,7 @@ type ParsedItemResponse = {
   link: string;
 };
 
-export type AlertasResponse = Array<ParsedItemResponse>;
+export type AlertasResponse = GenericResponse<Array<ParsedItemResponse>>;
 
 const baseUrl = 'https://defesacivil.rs.gov.br';
 
@@ -64,5 +65,13 @@ export async function GET(): Promise<Response> {
 
   const { body } = (await response.json()) as AlertasDefesaCivilResponse;
 
-  return Response.json(parseResponse(body));
+  const payload: AlertasResponse = {
+    meta: {
+      source: 'https://defesacivil.rs.gov.br/avisos-e-alertas',
+      lastUpdate: new Date(),
+    },
+    data: parseResponse(body),
+  };
+
+  return Response.json(payload);
 }

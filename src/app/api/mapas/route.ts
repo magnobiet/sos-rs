@@ -47,5 +47,7 @@ const mapas: MunicipiosResponse = [
 ];
 
 export function GET(): Response {
-  return Response.json(mapas);
+  return Response.json({
+    data: mapas,
+  });
 }

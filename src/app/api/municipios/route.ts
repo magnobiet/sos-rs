@@ -422,7 +422,9 @@ const municipios: Array<Municipio> = [
 
 export function GET(): Response {
   return Response.json({
-    source: 'https://www.diariooficial.rs.gov.br/materia?id=998883',
+    meta: {
+      source: 'https://www.diariooficial.rs.gov.br/materia?id=998883',
+    },
     data: municipios,
   });
 }
