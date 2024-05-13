@@ -10,14 +10,46 @@ export type MunicipiosResponse = {
 };
 
 const municipios: Array<Municipio> = [
-  { name: 'Aceguá', site: null, instagram: null },
-  { name: 'Agudo', site: null, instagram: null },
-  { name: 'Alegrete', site: null, instagram: null },
-  { name: 'Alegria', site: null, instagram: null },
-  { name: 'Alto Alegre', site: null, instagram: null },
-  { name: 'Alvorada', site: null, instagram: null },
-  { name: 'Amaral Ferrador', site: null, instagram: null },
-  { name: 'Ametista do Sul', site: null, instagram: null },
+  {
+    name: 'Aceguá',
+    site: 'http://acegua.rs.gov.br/',
+    instagram: 'https://www.instagram.com/prefaacegua',
+  },
+  {
+    name: 'Agudo',
+    site: 'https://www.agudo.rs.gov.br/',
+    instagram: 'https://www.facebook.com/prefagudo/',
+  },
+  {
+    name: 'Alegrete',
+    site: 'https://www.alegrete.rs.gov.br/',
+    instagram: 'https://www.instagram.com/prefeitura_de_alegrete/',
+  },
+  {
+    name: 'Alegria',
+    site: 'https://www.pmalegria.rs.gov.br',
+    instagram: 'https://www.instagram.com/pmalegriars/',
+  },
+  {
+    name: 'Alto Alegre',
+    site: 'https://altoalegre.rs.gov.br/',
+    instagram: 'https://www.instagram.com/prefealtoalegre/',
+  },
+  {
+    name: 'Alvorada',
+    site: 'https://www.alvorada.rs.gov.br/',
+    instagram: 'https://www.instagram.com/prefeituradealvorada/',
+  },
+  {
+    name: 'Amaral Ferrador',
+    site: 'https://www.amaralferrador.rs.gov.br/',
+    instagram: 'https://www.instagram.com/prefeituraamaral/',
+  },
+  {
+    name: 'Ametista do Sul',
+    site: 'https://www.ametistadosul.rs.gov.br/',
+    instagram: 'https://www.instagram.com/prefeituradeametistadosul/',
+  },
   { name: 'André da Rocha', site: null, instagram: null },
   { name: 'Anta Gorda', site: null, instagram: null },
   { name: 'Araricá', site: null, instagram: null },
