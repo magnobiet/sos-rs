@@ -39,6 +39,12 @@ const mapas: MunicipiosResponse = [
       'https://www.google.com/maps/d/embed?mid=1XCT-eGo39ygiVlLHE6EjxZHY45E2TqA&ehbc=2E312F',
   },
   {
+    name: 'Ventusky',
+    description: '',
+    link: 'https://www.ventusky.com/',
+    iframeLink: 'https://www.ventusky.com/?p=-29.90%3B-53.27%3B6&l=cape',
+  },
+  {
     name: 'ANA - Hidroweb',
     description:
       'Aplicação da Agência Nacional de Águas e Saneamento Básico para analise as estações hidrometeorológicas do Brasil e verifique, em tempo real os indicadores de nível, vazão e chuva.',
