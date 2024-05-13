@@ -24,21 +24,26 @@ export function SectionAjuda({
 }): ReactElement {
   return (
     <PageSection title="Ajuda" className={className}>
-      {ajudas.map(({ name, description, link }) => {
-        return (
-          <div key={name} className="flex w-full flex-col items-center gap-4">
-            <p className="text-center">{description}</p>
-
-            <Link
-              className="rounded bg-rs-green px-4 py-2 font-bold text-white"
-              href={link}
-              target="_blank"
+      <div className="flex w-full flex-col gap-12 md:flex-row">
+        {ajudas.map(({ name, description, link }) => {
+          return (
+            <div
+              key={name}
+              className="flex w-full flex-col items-center gap-4 md:w-2/4"
             >
-              Acessar {name}
-            </Link>
-          </div>
-        );
-      })}
+              <p className="text-center">{description}</p>
+
+              <Link
+                className="rounded bg-rs-green px-4 py-2 font-bold text-white"
+                href={link}
+                target="_blank"
+              >
+                Acessar {name}
+              </Link>
+            </div>
+          );
+        })}
+      </div>
     </PageSection>
   );
 }
