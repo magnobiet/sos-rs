@@ -46,7 +46,7 @@ const municipios: Array<Municipio> = [
   { name: 'Benjamin Constant do Sul', site: null, instagram: null },
   {
     name: 'Bento Gonçalves',
-    site: null,
+    site: 'https://bentogoncalves.atende.net/',
     instagram: 'https://www.instagram.com/prefeiturabento/',
   },
   { name: 'Boa Vista Das Missões', site: null, instagram: null },
@@ -87,7 +87,11 @@ const municipios: Array<Municipio> = [
   { name: 'Carlos Gomes', site: null, instagram: null },
   { name: 'Caseiros', site: null, instagram: null },
   { name: 'Catuípe', site: null, instagram: null },
-  { name: 'Caxias do Sul', site: null, instagram: null },
+  {
+    name: 'Caxias do Sul',
+    site: 'https://caxias.rs.gov.br/',
+    instagram: 'https://www.instagram.com/prefacaxiasdosul/',
+  },
   { name: 'Centenário', site: null, instagram: null },
   { name: 'Cerro Branco', site: null, instagram: null },
   { name: 'Cerro Grande do Sul', site: null, instagram: null },
@@ -253,7 +257,11 @@ const municipios: Array<Municipio> = [
   { name: 'Pinhal Grande', site: null, instagram: null },
   { name: 'Pinhal', site: null, instagram: null },
   { name: 'Pinheiro Machado', site: null, instagram: null },
-  { name: 'Pinto Bandeira', site: null, instagram: null },
+  {
+    name: 'Pinto Bandeira',
+    site: 'https://www.pintobandeira.rs.gov.br/',
+    instagram: 'https://www.instagram.com/municipiopintobandeira/',
+  },
   { name: 'Piratini', site: null, instagram: null },
   { name: 'Planalto', site: null, instagram: null },
   { name: 'Poço das Antas', site: null, instagram: null },
@@ -261,7 +269,7 @@ const municipios: Array<Municipio> = [
   { name: 'Portão', site: null, instagram: null },
   {
     name: 'Porto Alegre',
-    site: null,
+    site: 'https://prefeitura.poa.br/',
     instagram: 'https://www.instagram.com/prefpoa/',
   },
   { name: 'Porto Lucena', site: null, instagram: null },

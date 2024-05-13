@@ -27,7 +27,10 @@ export async function SectionMunicipios({
       <div className="w-full text-center">
         <p>
           Município em estado de calamidade pública pelo decreto número{' '}
-          <Link href="https://www.diariooficial.rs.gov.br/materia?id=998883">
+          <Link
+            className="underline"
+            href="https://www.diariooficial.rs.gov.br/materia?id=998883"
+          >
             57.603
           </Link>
           , de 5 de maio de 2024.
@@ -41,13 +44,15 @@ export async function SectionMunicipios({
                 className={clsx(
                   'rounded bg-slate-400 px-2 transition-colors hover:bg-slate-300 focus:bg-slate-300',
                   {
-                    'bg-slate-400': instagram !== null,
                     'bg-slate-300': instagram === null,
+                    'bg-slate-400': instagram !== null,
                   },
                 )}
               >
                 {instagram !== null ? (
-                  <Link href={instagram}>{name}</Link>
+                  <Link target="_blank" href={instagram}>
+                    {name}
+                  </Link>
                 ) : (
                   <>{name}</>
                 )}
