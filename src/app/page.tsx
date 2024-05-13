@@ -8,6 +8,7 @@ import { SectionMapas } from '~/components/section-mapas';
 import { SectionMunicipios } from '~/components/section-municipios';
 import { SectionNoticias } from '~/components/section-noticias';
 import { SectionPets } from '~/components/section-pets';
+import { SectionResgate } from '~/components/section-resgate';
 
 export default function Home(): ReactElement {
   return (
@@ -15,6 +16,8 @@ export default function Home(): ReactElement {
       <SectionDefesaCivil />
 
       <SectionDoacoes />
+
+      <SectionResgate />
 
       <SectionAjuda />
 
