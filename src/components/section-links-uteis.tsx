@@ -8,6 +8,10 @@ const links = [
     link: 'https://defesacivil.rs.gov.br/',
   },
   {
+    name: 'MetSul Metereologia',
+    link: 'https://metsul.com/',
+  },
+  {
     name: 'Portal do Estado do Rio Grande do Sul',
     link: 'https://www.estado.rs.gov.br/',
   },
