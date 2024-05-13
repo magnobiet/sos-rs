@@ -41,13 +41,11 @@ export async function SectionMunicipios({
             return (
               <li
                 key={name}
-                className={clsx(
-                  'rounded bg-slate-400 px-2 transition-colors hover:bg-slate-300 focus:bg-slate-300',
-                  {
-                    'bg-slate-300': instagram === null,
-                    'bg-slate-400': instagram !== null,
-                  },
-                )}
+                className={clsx('rounded px-2 transition-colors', {
+                  'bg-slate-300': instagram === null,
+                  'focus:bg-slate-30 bg-slate-400 hover:bg-slate-300':
+                    instagram !== null,
+                })}
               >
                 {instagram !== null ? (
                   <Link target="_blank" href={instagram}>
