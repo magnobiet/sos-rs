@@ -7,6 +7,7 @@ import { SectionLinksUteis } from '~/components/section-links-uteis';
 import { SectionMapas } from '~/components/section-mapas';
 import { SectionMunicipios } from '~/components/section-municipios';
 import { SectionNoticias } from '~/components/section-noticias';
+import { SectionPets } from '~/components/section-pets';
 
 export default function Home(): ReactElement {
   return (
@@ -18,6 +19,8 @@ export default function Home(): ReactElement {
       <SectionAjuda />
 
       <SectionAbrigos />
+
+      <SectionPets />
 
       <SectionMapas />
 
