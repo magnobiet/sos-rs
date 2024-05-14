@@ -19,7 +19,20 @@ const radios = [
     name: 'Mix 107.1 FM',
     link: 'http://www.mixfmpoa.com.br/',
   },
-];
+].sort((a, b) => {
+  const nameA = a.name.toUpperCase();
+  const nameB = b.name.toUpperCase();
+
+  if (nameA < nameB) {
+    return -1;
+  }
+
+  if (nameA > nameB) {
+    return 1;
+  }
+
+  return 0;
+});
 
 const jornais = [
   {
@@ -54,7 +67,20 @@ const jornais = [
     name: 'Timoneiro',
     link: 'https://jornaltimoneiro.com.br/',
   },
-];
+].sort((a, b) => {
+  const nameA = a.name.toUpperCase();
+  const nameB = b.name.toUpperCase();
+
+  if (nameA < nameB) {
+    return -1;
+  }
+
+  if (nameA > nameB) {
+    return 1;
+  }
+
+  return 0;
+});
 
 export function SectionNoticias({
   className,
@@ -63,13 +89,13 @@ export function SectionNoticias({
 }): ReactElement {
   return (
     <PageSection title="Notícias locais" className={className}>
-      <div className="w-2/4">
-        <h4 className="text-2xl">Jornais</h4>
+      <div className="flex w-2/4 flex-col items-center justify-center">
+        <h4 className="mb-2 text-2xl">Jornais</h4>
 
-        <ul>
+        <ul className="flex flex-wrap gap-4">
           {jornais.map(({ name, link }) => {
             return (
-              <li key={link}>
+              <li key={link} className="rounded bg-slate-100 px-4">
                 <Link className="hover:underline focus:underline" href={link}>
                   {name}
                 </Link>
@@ -79,13 +105,13 @@ export function SectionNoticias({
         </ul>
       </div>
 
-      <div className="w-2/4">
-        <h4 className="text-2xl">Rádios</h4>
+      <div className="flex w-2/4 flex-col items-center justify-center">
+        <h4 className="mb-2 text-2xl">Rádios</h4>
 
-        <ul>
+        <ul className="flex flex-wrap gap-4">
           {radios.map(({ name, link }) => {
             return (
-              <li key={link}>
+              <li key={link} className="rounded bg-slate-100 px-4">
                 <Link className="hover:underline focus:underline" href={link}>
                   {name}
                 </Link>

@@ -6,12 +6,12 @@ const abrigos = [
   {
     name: 'SOS-RS.com',
     description:
-      'A plataforma SOS-RS.com lista os abrigos disponíveis no estado, assim como seu status de lotação e necessidades. Mais de 400 abrigos cadastrados.',
+      'Para quem está precisando cadastrar abrigo ou doações, o SOS-RS é um portal, você pode registrar informações sobre abrigos disponíveis ou doações que deseja oferecer.',
     link: 'https://sos-rs.com/',
   },
   {
     name: 'AbrigaRS.com.br',
-    description: '  Mapeamento de abrigos e suas necessidades.',
+    description: 'Mapeamento de abrigos e suas necessidades.',
     link: 'https://abrigars.com.br/',
   },
 ];
