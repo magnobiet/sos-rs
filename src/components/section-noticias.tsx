@@ -4,12 +4,20 @@ import { PageSection } from './page-section';
 
 const radios = [
   {
-    name: 'Gaúcha',
+    name: 'Gaúcha 93.7 FM',
     link: 'https://gauchazh.clicrbs.com.br/',
   },
   {
-    name: 'Atlântida',
+    name: 'Atlântida 94.3 FM',
     link: 'https://www.gauchazh.com.br/atlantida/',
+  },
+  {
+    name: 'Bandeirantes 94.9 FM',
+    link: 'https://www.band.uol.com.br/radios/radio-bandeirantes/porto-alegre',
+  },
+  {
+    name: 'Mix 107.1 FM',
+    link: 'http://www.mixfmpoa.com.br/',
   },
 ];
 
@@ -38,6 +46,14 @@ const jornais = [
     name: 'Serra Nossa',
     link: 'https://serranossa.com.br/',
   },
+  {
+    name: 'ABC+',
+    link: 'https://www.abcmais.com/',
+  },
+  {
+    name: 'Timoneiro',
+    link: 'https://jornaltimoneiro.com.br/',
+  },
 ];
 
 export function SectionNoticias({
@@ -48,10 +64,10 @@ export function SectionNoticias({
   return (
     <PageSection title="Notícias locais" className={className}>
       <div className="w-2/4">
-        <h4 className="text-2xl">Rádios</h4>
+        <h4 className="text-2xl">Jornais</h4>
 
         <ul>
-          {radios.map(({ name, link }) => {
+          {jornais.map(({ name, link }) => {
             return (
               <li key={link}>
                 <Link className="hover:underline focus:underline" href={link}>
@@ -64,10 +80,10 @@ export function SectionNoticias({
       </div>
 
       <div className="w-2/4">
-        <h4 className="text-2xl">Jornais</h4>
+        <h4 className="text-2xl">Rádios</h4>
 
         <ul>
-          {jornais.map(({ name, link }) => {
+          {radios.map(({ name, link }) => {
             return (
               <li key={link}>
                 <Link className="hover:underline focus:underline" href={link}>
