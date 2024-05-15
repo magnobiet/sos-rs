@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import type { ReactElement } from 'react';
-import type { AlertasResponse } from '~/app/api/defesa-civil/alertas/route';
+import type { AlertasResponse } from '~/app/api/v1/defesa-civil/alertas/route';
 import { baseUrl } from '~/config';
 import { formatDate } from '~/lib/utils';
 import { PageSection } from './page-section';
@@ -13,7 +13,7 @@ import {
 } from './ui/carousel';
 
 async function getData(): Promise<AlertasResponse> {
-  const response = await fetch(`${baseUrl}/api/defesa-civil/alertas`, {
+  const response = await fetch(`${baseUrl}/api/v1/defesa-civil/alertas`, {
     cache: 'no-cache',
   });
 

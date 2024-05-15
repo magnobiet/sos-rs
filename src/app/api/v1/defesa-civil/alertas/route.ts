@@ -1,5 +1,5 @@
 import { parse } from 'node-html-parser';
-import type { GenericResponse } from '../../generic-response';
+import type { GenericResponse } from '../../../generic-response';
 
 type AlertasDefesaCivilResponse = {
   recordcount: number;

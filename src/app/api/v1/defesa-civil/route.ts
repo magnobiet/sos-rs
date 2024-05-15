@@ -1,4 +1,4 @@
-import type { GenericResponse } from '../generic-response';
+import type { GenericResponse } from '../../generic-response';
 
 export type DefesaCivilResponse = Array<{
   id: string;
